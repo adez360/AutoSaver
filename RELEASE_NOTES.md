@@ -1,6 +1,6 @@
 # AutoSaver Release Notes
 
-## 🚀 AutoSaver {{VERSION}}
+## 🚀 AutoSaver 1.0.0
 
 ### 🔧 What's New
 - Initial release with core auto-save functionality
