@@ -1,0 +1,14 @@
+{
+  "name": "com.adez360.autosaver.Editor",
+  "references": [
+    "com.adez360.autosaver"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": []
+}

@@ -1,0 +1,216 @@
+/* AutoSaverWindow.uss - Stylesheet for the AutoSaver control window */
+
+/* Main Container */
+.main-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(56, 56, 56);
+}
+
+/*Header */
+.header {
+    background-color: rgb(44, 44, 44);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-controls {
+    flex-direction: row;
+    align-items: center;
+}
+
+.language-label {
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.language-dropdown {
+    width: 100px;
+    height: 18px;
+}
+
+.language-dropdown .unity-dropdown__label {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.language-dropdown .unity-dropdown__input {
+    background-color: rgb(36, 36, 36);
+    border-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* Title */
+.title-label {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    margin-bottom: 0px;
+}
+
+/* Section Styling */
+.settings-box, .actions-box {
+    background-color: rgb(44, 44, 44);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.actions-box {
+    margin-bottom: 0px;
+}
+
+.section-title {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+
+/* Settings Section */
+.setting-row {
+    flex-direction: row;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.setting-label {
+    width: 130px;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    -unity-text-align: middle-left;
+    margin-right: 10px;
+    flex-shrink: 0; /* 防止標籤被壓縮 */
+}
+
+.setting-control {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Toggle specific styling */
+.setting-control.unity-toggle {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.setting-control.unity-toggle > .unity-toggle__label {
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.setting-control.unity-toggle > .unity-toggle__input {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Input field styling */
+.setting-control.unity-text-field__input,
+.setting-control.unity-float-field__input,
+.setting-control.unity-integer-field__input {
+    background-color: rgb(36, 36, 36);
+    border-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    /* 移除 width: 100% 讓輸入框使用容器的自然寬度 */
+}
+
+.setting-control.unity-text-field__input:focus,
+.setting-control.unity-float-field__input:focus,
+.setting-control.unity-integer-field__input:focus {
+    border-color: rgb(0, 150, 255);
+}
+
+/* Button Styling */
+.button-row {
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.action-button {
+    flex-grow: 1;
+    height: 30px;
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.toggle-button {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(43, 118, 43); /* #2B762B */
+    border-color: rgb(89, 140, 89); /* 啟用時的綠色邊框 */
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 12px;
+}
+
+.action-button:hover {
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(100, 100, 100);
+}
+
+.action-button:active {
+    background-color: rgb(50, 50, 50);
+}
+
+.toggle-button:hover {
+    background-color: rgb(55, 140, 55);
+    border-color: rgb(100, 180, 100); /* 更亮的綠色邊框 */
+}
+
+.toggle-button:active {
+    background-color: rgb(25, 100, 25);
+}
+
+.action-button:disabled {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(60, 60, 60);
+    color: rgb(120, 120, 120);
+}
+
+.add-button {
+    margin-top: 10px;
+    height: 30px;
+    background-color: rgb(0, 120, 255);
+    border-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.add-button:hover {
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 160, 255);
+}
+
+.add-button:active {
+    background-color: rgb(0, 100, 220);
+}
+

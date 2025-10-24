@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+    
+        <!-- Header -->
+        <engine:Box class="header">
+            <engine:Label name="title-label" text="AutoSaver Control Panel" class="title-label" />
+            <engine:Box class="language-controls">
+                <engine:Label text="Language" class="language-label" />
+                <engine:DropdownField name="language-dropdown" class="language-dropdown" />
+            </engine:Box>
+        </engine:Box>
+
+        <engine:VisualElement class="main-container">
+        
+        <!-- Settings Section -->
+        <engine:Box class="settings-box">
+            <engine:Label name="settings-label" text="Settings" class="section-title" />
+
+            <!-- Save Interval -->
+            <engine:VisualElement class="setting-row">
+                <engine:Label name="save-interval-label" text="Save Interval (minutes)" class="setting-label" />
+                <engine:FloatField name="interval-field" value="5" class="setting-control" />
+            </engine:VisualElement>
+
+            <!-- Save Path -->
+            <engine:VisualElement class="setting-row">
+                <engine:Label name="save-path-label" text="Save Path" class="setting-label" />
+                <engine:TextField name="path-field" value="Assets/AutoSave/" class="setting-control" />
+            </engine:VisualElement>
+
+            <!-- Max Save Files -->
+            <engine:VisualElement class="setting-row">
+                <engine:Label name="max-files-label" text="Max Save Files" class="setting-label" />
+                <engine:IntegerField name="max-files-field" value="10" class="setting-control" />
+            </engine:VisualElement>
+        </engine:Box>
+
+        <!-- Actions Section -->
+        <engine:Box class="actions-box">
+            <engine:Label name="actions-label" text="Actions" class="section-title" />
+            
+            <engine:Box class="button-row">
+                <engine:Button name="toggle-autosave-button" text="AutoSave: ON" class="toggle-button" />
+                <engine:Button name="manual-save-button" text="Manual Save" class="action-button" />
+            </engine:Box>
+        </engine:Box>
+        
+    </engine:VisualElement>
+    
+</engine:UXML>
