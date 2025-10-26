@@ -1,7 +1,7 @@
 {
   "name": "com.adez360.autosaver",
   "displayName": "AutoSaver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Unity plugin to automatically save scenes at custom intervals with configurable options and UI.",
   "dependencies": {},
   "unity" : "2022.3",
