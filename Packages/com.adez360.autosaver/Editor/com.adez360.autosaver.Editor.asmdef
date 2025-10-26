@@ -3,10 +3,10 @@
   "references": [
     "com.adez360.autosaver"
   ],
-  "includePlatforms": [],
+  "includePlatforms": ["Editor"],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
-  "autoReferenced": true,
+  "autoReferenced": false,
   "overrideReferences": false,
   "precompiledReferences": [],
   "defineConstraints": [],

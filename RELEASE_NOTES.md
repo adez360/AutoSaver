@@ -1,6 +1,6 @@
 # AutoSaver Release Notes
 
-## 🚀 AutoSaver 1.0.0
+## 🚀 AutoSaver 1.0.1
 
 ### 🔧 What's New
 - Initial release with core auto-save functionality
@@ -8,10 +8,11 @@
 - Customizable settings and automatic cleanup
 
 ### 🐛 Bug Fixes
-- N/A (Initial release)
+- Fixed assembly definition configuration to prevent Editor scripts from being compiled during avatar builds
+- AutoSaver now only compiles in Editor mode, not in avatar builds
 
 ### 📝 Notes
-- This is the first release of AutoSaver
+- Editor scripts are now properly excluded from runtime builds
 - Feedback and suggestions are welcome!
 
 ---
